@@ -1,13 +1,15 @@
-public class MinCoins throws FileNotFoundException{
+public class MinCoins{
     public static void dynamic(int[] d, int amount) {
         int[][] V = new int[amount + 1][d.length + 1];
 
-        // if amount=0 then you don't need any coin to pay for 0       
+        // if amount=0 then you don't need any coin to pay for 0
+	// This is a base case
         for (int j = 0; j <= d.length; j++) {
             V[0][j] = 0;
         }
 
         // if you are supposed to use the first coin only then you have to give so many coins, as first coin has value 1
+	// This is a base case
         for (int i = 0; i <= amount; i++) {
             V[i][0] = i;
         }
