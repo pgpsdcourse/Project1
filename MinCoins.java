@@ -1,4 +1,4 @@
-public class MinCoins throws IOException{
+public class MinCoins {
     public static void dynamic(int[] d, int amount) {
         int[][] V = new int[amount + 1][d.length + 1];
 
