@@ -1,4 +1,4 @@
-public class MinCoins{
+public class MinCoins throws FileNotFoundException{
     public static void dynamic(int[] d, int amount) {
         int[][] V = new int[amount + 1][d.length + 1];
 
